@@ -1,0 +1,16 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background:white;
+    color: #ff0011; /* Цвет символа */
+    font-size: 140%; /* Размер шрифта */
+}
+
+

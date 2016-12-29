@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/jumboron.css" rel="stylesheet">
+    <script src="js/validatescript.js"></script>
+    <title>Заголовок</title>
+    <style>
+        .letter {
+            color: red; /* Цвет символа */
+            font-size: 200%; /* Размер шрифта */
+        }
+        p {
+            color: rgb(49, 151, 116); /* Цвет текста */
+        }
+    </style>
+    <script  type="application/javascript">
+        function checkForm(form)
+        {
+            re = /^\w+$/;
+            if(!re.test(form.text.value)) {
+                //alert("Error: Username must contain only letters, numbers and underscores!");
+                document.getElementById('div3').innerHTML = '<ol><li>Error: Username must contain only letters, numbers and underscores!</li></ol>'
+                form.text.focus();
+                return false;
+            }
+        }
+
+        function loadDoc(value) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "test?text="+value, false);
+            xhttp.send();
+            document.getElementById("result").innerHTML = xhttp.responseText;
+        }
+    </script>
+</head>
+<body>
+<div id="div1" ><p font-color="green">Aaaaa</p><br>aaaa</div>
+<div id="div2"><span class="letter">Bbbbbb<br>bb</span>bb</div>
+<div id="div3" class="container">Cccccc<br>ccccc</div>
+
+<!--<form action="test"  method="post" name="myForm" onsubmit="return validateForm()">-->
+<form action="test"  method="post" name="myForm" onsubmit="return checkForm(this)">
+    <!--<form action="test"  method="post" name="myForm" onsubmit="return true">-->
+    <input type="text" name="text" />
+    <input type="submit" value="Submit">
+</form>
+
+<!--<a onClick="javascript:SendGet()">Send ajax query</a>-->
+<button type="button" onclick="loadDoc(document.forms['myForm']['text'].value)">Change Content</button>
+<div id="result"></div>
+
+</body>
+</html>

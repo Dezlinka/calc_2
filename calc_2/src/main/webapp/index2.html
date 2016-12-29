@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Bootstrap 101 Шаблон</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../navbar/">Default</a></li>
+                <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
+                <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It
+            includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <p>
+            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p>
+    </div>
+
+
+    <div>
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">@</span>
+            <form action="echo" method="get">
+                <input type="text" name="echo" class="form-control" placeholder="Username"
+                       aria-describedby="basic-addon1" id="aaa" >
+            </form>
+        </div>
+        <br>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2">@example.com</span>
+        </div>
+        <br>
+        <label for="basic-url">Your vanity URL</label>
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-addon">.00</span>
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <span class="input-group-addon">0.00</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        </div>
+        <br>
+
+        <form action="echo" method="post" id="register-form" class="form-signin">
+            <div class="form-group">
+                <label for="email" class="sr-only">Email</label>
+                <input type="text" name="email" id="email" size="25" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="username" class="sr-only">
+                    Username
+                </label>
+                <input type="text" name="username" id="username" size="25" class="form-control"
+                       placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="password" class="sr-only">
+                    Password
+                </label>
+                <input type="password" size="15" name="password" id="password" class="form-control"
+                       placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="firstname" class="sr-only">
+                    Firstname
+                </label>
+                <input type="text" name="firstname" id="firstname" size="25" class="form-control"
+                       placeholder="firstname">
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="sr-only">
+                    Lastname
+                </label>
+                <input type="text" name="lastname" id="lastname" size="25" class="form-control"
+                       placeholder="Lastname">
+            </div>
+
+            <button type="submit"  class="btn btn-lg btn-primary
+            btn-block"><i class="fa fa-sign-in"></i> Submit</button>
+            <input type="reset" value="Reset" class="btn btn-lg btn-primary
+            btn-block">
+        </form>
+    </div>
+    <div class="container-fluid">
+
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+            <div class="col-xs-6 col-md-4" id="example-1">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="col-xs-6">.col-xs-6</div>
+            <div class="col-xs-6">.col-xs-6</div>
+        </div>
+    </div>
+
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.js"></script>
+<script>
+
+    // по окончанию загрузки страницы
+    $(document).ready(function(){
+        // вешаем на клик по элементу с id = example-1
+        $('#example-1').click(function(){
+            // загрузку HTML кода из файла example.html
+            if($(".has-error").length==0) {
+                // exists
+                $(this).load('echo?echo='+$('#aaa').val());
+            }
+
+        })
+    });
+
+
+
+    // jQuery Form Validation code -->
+$.validator.setDefaults({
+    highlight: function (element) {
+        $(element).closest('.form-group').addClass('has-error');
+    },
+    unhighlight: function (element) {
+        $(element).closest('.form-group').removeClass('has-error');
+    },
+    errorElement: 'span',
+    errorClass: 'help-block',
+    errorPlacement: function (error, element) {
+        if (element.parent('.input-group').length) {
+            error.insertAfter(element.parent());
+        } else {
+            error.insertAfter(element);
+        }
+    }
+});
+
+// When the browser is ready...
+$(function () {
+
+    // Setup form validation on the #register-form element
+    $("#register-form").validate({
+        onkeyup: false,
+        // Specify the validation rules
+        rules: {
+            username: {
+                cache: false,
+                required: true,
+                //minlength: 5,
+                remote: {
+                    url: "checkuser",
+                    type: "get"
+                }
+            },
+            email: {
+                required: true,
+                email: true
+
+            },
+            password: {
+                required: true,
+                minlength: 5
+            },
+            agree: "required"
+        },
+
+        // Specify the validation error messages
+        messages: {
+            firstname: "Firstname is wrong",
+            lastname: "Lastname is wrong",
+            password: {
+                required: true,
+                minlength: 5
+            }
+            ,
+            username: {
+                required: true,
+                minlength: 5,
+                remote: "This username is already taken"
+            }
+            ,
+            email: "Vaid email is needed",
+            agree: "Please agree"
+        },
+
+        submitHandler: function (form) {
+
+            form.submit();
+
+        }
+    })
+    ;
+    $("#register-form").change(function () {
+        $("#username").removeData("previousValue"); //clear cache when changing group
+        $("#register-form").data('validator').element("#username"); //retrigger remote call
+        //my validator is stored in .data() on the form
+    });
+
+
+});
+
+
+</script>
+</body>
+</html>

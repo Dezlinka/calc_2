@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/" useHttpOnly="true">
+    <Resource
+            driverClassName="com.mysql.jdbc.Driver"
+            maxActive="100"
+            maxIdle="200"
+            maxWait="5000"
+            name="jdbc/Calculator"
+            username="root"
+            password="a0k5331su9mn"
+            type="javax.sql.DataSource"
+            url="jdbc:mysql://localhost:3306/calculator"
+            validationQuery="SELECT 1">
+    </Resource><!--under the TOmcat  name should be 'jdbc/StudentsDS'-->
+</Context>
